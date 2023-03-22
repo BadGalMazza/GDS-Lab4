@@ -1,4 +1,4 @@
-repository "Lab4 Game@wechat_os_qy0wcrbl_mnh1aftw91hf2nee@cloud.cn"
+repository "Lab4.1@wechat_os_qy0wcrbl_mnh1aftw91hf2nee@cloud.cn"
   path "/"
     br "/main"
     co "/main"
