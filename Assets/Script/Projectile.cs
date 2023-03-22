@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
+    public AudioClip audioClip;
+    private AudioSource source;
     // Start is called before the first frame update
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.gameObject.CompareTag("FriendlyRocket"))
         {
+            source.PlayOneShot(audioClip);
             BounceOffRocket();
         }
     }
@@ -27,5 +30,6 @@ public class Projectile : MonoBehaviour
         rb.velocity = reflectedVelocity;
     }
 
+    
 }
 
