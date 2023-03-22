@@ -17,4 +17,3 @@ public class City : MonoBehaviour
         // Add any additional logic for city destruction visuals here
     }
 }
-
